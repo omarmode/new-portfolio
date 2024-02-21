@@ -1,0 +1,148 @@
+/*
+===========
+table of contents
+===========
+1-header Design
+2-icon Button
+3-modal or pop up
+4-Responsive Design(media query)
+
+
+
+
+
+*/
+
+header.flex {
+  justify-content: space-between;
+  padding: 0 2.4rem;
+  margin-top: 1rem;
+}
+header.flex nav {
+  background-color: var(--bgheader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px rgb(49, 48, 48);
+}
+header ul.flex {
+  gap: 16px;
+}
+header ul li a {
+  color: var(--title) !important;
+  font-size: 0.88rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+header ul li a:hover {
+  font-size: 0.9rem;
+  opacity: 1;
+  color: var(--blue) !important;
+}
+header button {
+  font-size: 1.2rem;
+}
+/*menu pop up*/
+header .fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(40, 40, 41, 0.91);
+  backdrop-filter: blur(4px);
+}
+
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+  80% {
+    scale: 1;
+  }
+  100% {
+    scale: 0.8;
+  }
+}
+
+header .fixed ul.modal {
+  animation: mymove 1s 1;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--sacandry);
+}
+
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border);
+  padding: 0.77rem 0;
+}
+
+ul.modal li:first-child {
+  text-align: right;
+  border-bottom: none !important;
+  padding-top: 0.5rem;
+}
+header .fixed ul.modal li:last-child {
+  border: none !important;
+}
+
+.menu {
+  display: none;
+}
+/*icon button*/
+.icon-sun {
+  color: orange;
+}
+.light .mode {
+  box-shadow: 1px 2px 10px orange;
+}
+header .icon-th-menu-outline,
+header .mode {
+  background-color: var(--bgheader);
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+  justify-content: center;
+  text-align: center;
+  color: var(--suptltle);
+  border: 1px solid rgba(244, 165, 96, 0.249);
+  transition: 0.2s;
+}
+
+header .icon-th-menu-outline:hover,
+header .mode:hover {
+  color: var(--title);
+  border: 1px solid rgba(244, 165, 96);
+  cursor: pointer;
+}
+.icon-close {
+  font-size: 1.3rem;
+  transition: 1s;
+  color: var(--suptltle);
+}
+.icon-close:hover {
+  color: crimson;
+  rotate: 180deg;
+  font-size: 1.6rem;
+}
+/*media query*/
+@media (max-width: 700px) {
+  div {
+    header.flex nav {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+  }
+}
+@media (min-width: 700px) {
+  div {
+    .menu {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+main.flex {
+  gap: 2.6rem;
+  align-items: start;
+}
+/*
+============
+right-section=====>card
+===========
+*/
+main.flex .section-right {
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.card {
+  border: 1px solid rgba(93, 188, 252, 0.3);
+  border-radius: 10px;
+  transition: 0.5s;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+.card:hover {
+  border: 1px solid var(--blue);
+  box-shadow: 1px 1px 5px var(--blue);
+  rotate: 2deg;
+  scale: 1.05;
+  cursor: pointer;
+}
+.light .card:hover {
+  background-color: rgb(246, 246, 246);
+}
+.dark .card:hover {
+  background-color: rgba(150, 150, 150, 0.123);
+}
+.light .icon-link {
+  color: black;
+}
+.box {
+  padding: 0.9rem 0.5rem;
+}
+.title {
+  color: var(--title);
+  text-transform: capitalize;
+}
+.suptitle {
+  color: var(--suptltle);
+  font-size: 0.8rem;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+.section-right article.card div.flex {
+  justify-content: space-between;
+}
+.link-a {
+  color: var(--blue);
+}
+a.icon-link {
+  color: azure;
+}
+.icon-link:hover {
+  color: var(--blue);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/*
+============
+left-section=====>buttons
+===========
+*/
+
+.section-left {
+  flex-direction: column;
+  gap: 10px;
+}
+.section-left button {
+  background-color: rgba(36, 37, 46, 1);
+  width: 11rem;
+  padding: 0.75rem;
+  text-align: center;
+  font-size: 1.05rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border-radius: 10px;
+  transition: 1s;
+}
+.section-left button:hover {
+  opacity: 1;
+  border: 0.5px solid var(--blue);
+}
+.section-left button.active {
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.8rem 0;
+  border: 1px solid var(--blue);
+  box-shadow: 2px 2px 10px var(--blue);
+}
+/*
+==========
+3-Responsive (media quary)
+==========
+
+
+
+
+*/
+
+@media (max-width: 600px) {
+  main.flex {
+    gap: 2.6rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-left {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+  }
+}

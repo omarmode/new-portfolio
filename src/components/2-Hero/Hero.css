@@ -1,0 +1,66 @@
+section.hero {
+  margin-top: 3rem;
+}
+/*    
+===========
+left section
+===========
+
+*/
+.left-section {
+  flex-grow: 1;
+}
+.avatar {
+  width: 120px;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  padding: 1px;
+  margin-right: 0.6rem;
+}
+.avatar:hover {
+  box-shadow: 1px 1px 6px var(--blue);
+}
+.icon-verified {
+  color: var(--blue);
+}
+
+.hero .title {
+  color: var(--title);
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  margin: 20px 0;
+}
+p.suptitle {
+  color: var(--suptltle);
+  line-height: 1.9rem;
+  font-size: 0.9rem;
+  margin-bottom: 32px;
+}
+.icons {
+  font-size: 1.5rem;
+  gap: 1.7rem;
+  color: var(--suptltle);
+}
+.icons .icon:hover {
+  font-size: 1.9rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.dark .icons .icon {
+  color: var(--suptltle);
+}
+.linkedin:hover,
+.twitter:hover {
+  color: var(--blue) !important;
+}
+.instagram:hover {
+  color: white;
+  background-image: linear-gradient(red, orange, rgb(255, 51, 0));
+  border-radius: 10px;
+}
+
+/*    
+===========
+right section =====> animation
+===========
+*/
