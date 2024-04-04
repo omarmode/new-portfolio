@@ -1,0 +1,28 @@
+.h-skills {
+  color: var(--title);
+  padding-top: 20px !important;
+}
+.h4-skills {
+  color: var(--title);
+}
+.img-skills {
+  border-radius: 60%;
+  height: 50px;
+  color: var(--title);
+  /* background-color: var(--bgheader); */
+}
+/* .Redux {
+  background-color: rgb(39, 39, 42) !important;
+  color: rgb(39, 39, 42) !important;
+} */
+.Rightskills {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+@media (max-width: 600px) {
+  .All-flex {
+    flex-wrap: wrap;
+  }
+}

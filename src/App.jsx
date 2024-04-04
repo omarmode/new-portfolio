@@ -4,6 +4,7 @@ import Main from "./components/3-main/Main";
 import Contact from "./components/4-contact/Contact";
 import Footer from "./components/5-footer/Footer";
 import { useEffect, useState } from "react";
+import Skills from "./components/6-Skills/Skills";
 
 function App() {
   useEffect(() => {
@@ -23,6 +24,8 @@ function App() {
       <Hero />
       <div className="line" />
       <Main />
+      <div className="line" />
+      <Skills />
       <div className="line" />
       <Contact />
       <div className="line" />

@@ -13,7 +13,7 @@ export default function Hero() {
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1)" }}
             transition={{ damping: 5, type: "spring", stiffness: 100 }}
-            src="./image.png"
+            src="https://new-portfolio-omega-gray.vercel.app/image.png"
             className="avatar"
             alt=""
           />
